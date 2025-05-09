@@ -1,0 +1,72 @@
+<mvc:View
+    xmlns:m="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.uxap"
+    displayBlock="true"
+    xmlns:infor="ui5.SharedBlocks.Info"
+    xmlns:employee="ui5.SharedBlocks.employees"
+    xmlns:orders="ui5.SharedBlocks.Orders"
+>
+    <ObjectPageLayout>
+        <headerTitle>
+            <ObjectPageDynamicHeaderTitle>
+                <expandedHeading>
+                    <m:Title text="My object idea" />
+                </expandedHeading>
+                <snappedHeading>
+                    <m:Title text="My object idea" />
+                </snappedHeading>
+                <expandedContent>
+                    <m:Text text="SAP UI Page Layout" />
+                </expandedContent>
+                <snappedContent>
+                    <m:Text text="SAP UI Page Layout" />
+                </snappedContent>
+            </ObjectPageDynamicHeaderTitle>
+        </headerTitle>
+        <headerContent>
+            <m:Label text="Hello! How are you today!" />
+        </headerContent>
+        <sections>
+            <ObjectPageSection
+                titleUppercase="false"
+                title="Information"
+            >
+                <subSections>
+                    <ObjectPageSubSection>
+                        <blocks>
+                            <infor:Info />
+                        </blocks>
+                        <moreBlocks>
+                            <infor:Info2 />
+                        </moreBlocks>
+                    </ObjectPageSubSection>
+                </subSections>
+            </ObjectPageSection>
+            <ObjectPageSection
+                titleUppercase="false"
+                title="Employees"
+            >
+                <subSections>
+                    <ObjectPageSubSection>
+                        <blocks>
+                            <employee:Employees />
+                        </blocks>
+                    </ObjectPageSubSection>
+                </subSections>
+            </ObjectPageSection>
+            <ObjectPageSection
+                titleUppercase="false"
+                title="Orders"
+            >
+                <subSections>
+                    <ObjectPageSubSection>
+                        <blocks>
+                            <orders:Orders />
+                        </blocks>
+                    </ObjectPageSubSection>
+                </subSections>
+            </ObjectPageSection>
+        </sections>
+    </ObjectPageLayout>
+</mvc:View>

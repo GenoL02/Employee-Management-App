@@ -1,0 +1,32 @@
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    controllerName="ui5.controller.Employees"
+>
+    <Table items="{/Orders}">
+        <columns>
+            <Column>
+                <Text text="Customer ID" />
+            </Column>
+            <Column>
+                <Text text="Order Date" />
+            </Column>
+            <Column>
+                <Text text="Shipped Date" />
+            </Column>
+            <Column>
+                <Text text="Ship Address" />
+            </Column>
+        </columns>
+        <items>
+            <ColumnListItem>
+                <cells>
+                    <Text text="{CustomerID}" />
+                    <Text text="{OrderDate}" />
+                    <Text text="{ShippedDate}" />
+                    <Text text="{ShipAddress}" />
+                </cells>
+            </ColumnListItem>
+        </items>
+    </Table>
+</mvc:View>
