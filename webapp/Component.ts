@@ -21,5 +21,8 @@ export default class Component extends UIComponent {
       bundleName: "ui5.i18n.i18n",
     });
     this.setModel(i18nModel, "i18n");
+
+    // create the views based on the url/hash
+    this.getRouter().initialize();
   }
 }
